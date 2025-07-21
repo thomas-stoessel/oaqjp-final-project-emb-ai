@@ -16,7 +16,7 @@ def emot_detector():
 
     return (f"For the given statement, the system response is 'anger': {anger}, 'disgust': {disgust}, 'fear': {fear}, 'joy': {joy} and 'sadness': {sadness}. The dominant emotion is {dominant_emotion}.")
 
-@app.route('/index')
+@app.route('/')
 def render_index_page():
     return render_template("index.html")
 
